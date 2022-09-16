@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship App</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+<div class="nav">
+    <div class="nav_inner">
+        <img src="images/lg_Chevening_primary_CMYK_horizontal-layout-WHITE.png" alt="" height="80px">
+        <a href="#">Contact</a>
+        <a href="#">Apply</a>
+        <a href="#">Download</a>
+    </div>
+</div>
+<div class="topSection">
+    <div class="innerTop">
+        <!-- top images before the link -->
+    </div>
+</div>
+<!-- here the background images follows -->
+<div class="bg_image">
+    <div class="bg_inner">
+        <div class="first">
+            <div class="first_gradient"><h2>we provide quality education</h2>
+            <h3>and study opprotunity for less priviledge pupils </h3>
+            <p>Schorlarship Award is givin based on Points </p>
+            </div>
+        </div>
+        <div class="second">
+            <div class="left"></div>
+            <div class="middle"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+<details>
+    <summary>Scholarship Now Open! Click to Apply</summary>
+    <div class="form">
+        <p>Contact Information</p>
+        <div class="instruction">
+            <p class="instruct">Instructions</p>
+            <p>Please complete this form to create an account on our online application system. Fields with red asterisks are mandatory.
+                Please ensure that the name you provide below is the same as the name on your passport. Please complete your profile and your name in Latin script (i.e. the version of your name in Latin characters where it has been transliterated in your passport.)</p>
+        </div>
+    
+        <!-- Here the For input begins -->
+        <div class="main_form">
+            <form action="">
+                <label for="title">Title</label> <br>
+                <select name="" id="tittle">
+                    <option value="">-- select one --</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Mss">Miss</option>
+                    <option value="Mx">Mx</option>
+                    <option value="Dr">Dr</option>
+                    <option value="other">other</option>
+                </select> <br>
+                <label for="titleError" id="tittleError"></label>
+                <br>
+                <label for="firstname">First Name (s)</label> <br>
+                <input type="text" id="firstName"> <br>
+                <label for="" id="firstNameError"></label>
+                <br>
+                <label for="lastname">Last Name (s)</label> <br>
+                <input type="text" id="lastName"><br>
+                <label for="" id="lastNameError"></label>
+                <br>
+                <label for="username">Name I prefered to be called</label><br>
+                <input type="text" id="userName"> <br>
+                <label for="" id="userNameError"></label>
+                <br>
+                <label for="">Date of Birth</label>
+                <input type="date" id="dob">
+                <label for="" id="dobError"></label>
+                <div class="instruction">
+                    <p class="instruct">Register with personal email only</p>
+                    <p>Please choose a personal email address and not an email address provided by your employer. Should you lose access to the email provided in this field, you can request for your additional email to be your principal email. For security reasons, we will not be able to change your email address to a different email address other than what is provided in the ‘additional email’ field.</p>
+                </div>
+                <!-- Email starts here -->
+                    <label for="email" >Email</label> <br>
+                    <input type="email" id="email"> <br>
+                    <label for="" id="emailError"></label>
+                    <br>
+                    <label for="confirm">Confirm Email</label><br>
+                    <input type="email" id="confirmMail"><br>
+                    <label for="" id="confirmMailError"></label>
+    
+                    <div class="instruction">
+                        <p class="instruct">Fill in your grades here</p>
+                        <p>Please choose a check properly on your result slip to make sure you are entering the right digits. Should you enter a wrong deata in this field provided, you can request for you can request for an edit via your email provided earlier ‘WAEC RESULT’.</p>
+                    </div>
+        
+            </form>
+                    <!-- This is basically for the grade -->
+                    <form action="" name="my_form">
+                    <div class="grade">
+                        <div class="grade_inner">
+                            <div class="left">
+                                <select name="" id="firstSubject" disabled>
+                                    <option value="english">English</option>
+                                    <option value="maths">Mathematics</option>
+                                    <option value="computer">Computer Sceince</option>
+                                    <option value="physics">Physics</option>
+                                    <option value="chemistry">Chemistry</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="government">Government</option>
+                                    <option value="commerce">Commerce</option>
+                                </select>
+                                <label for="" id="grade1Label"></label>
+                            </div>
+                            <div class="right">
+                                <input type="number" id="grade1" placeholder="enter english grade">
+                                <label for="" id="grade1Error"></label>
+                            </div>
+    
+                            <div class="left_2">
+                                <select name="" id="secondSubject" disabled>
+                                    <option value="maths" >Mathematics</option>
+                                    <option value="english">English</option>
+                                    <option value="computer">Computer Sceince</option>
+                                    <option value="physics">Physics</option>
+                                    <option value="chemistry">Chemistry</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="government">Government</option>
+                                    <option value="commerce">Commerce</option>
+                                </select>
+                                <label for="" id="grade2Label"></label>
+                            </div>
+                            <div class="right_2">
+                                <input type="number" id="grade2" placeholder="enter maths grade">
+                                <label for="" id="grade2Error"></label>
+                            </div>
+                            <div class="left_3">
+                                <select name="" id="thirdSubject">
+                                    <option value="">-- Select Option --</option>
+                                    <!-- <option value="computer">Computer Sceince</option>
+                                    <option value="physics">Physics</option>
+                                    <option value="chemistry">Chemistry</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="government">Government</option>
+                                    <option value="commerce">Commerce</option> -->
+                                </select>
+                                <label for="" id="grade3Label"></label>
+                            </div>
+                            <div class="right_3">
+                                <input type="number" id="grade3" placeholder="enter grade">
+                                <label for="" id="grade3Error"></label>
+                            </div>
+                            <div class="left_4">
+                                <select name="" id="fourthSubject">
+                                    <option value="">-- Select Option --</option>
+                                    <!-- <option value="computer">Computer Sceince</option>
+                                    <option value="physics">Physics</option>
+                                    <option value="chemistry">Chemistry</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="governemnt">Government</option>
+                                    <option value="commerce">Commerce</option> -->
+                                </select>
+                                <label for="" id="grade4Label"></label>
+                            </div>
+                            <div class="right_4">
+                                <input type="number" id="grade4" placeholder="enter grade">
+                                <label for="" id="grade4Error"></label>
+                            </div>
+                            <div class="left_5">
+                                <select name="" id="fifthSubject">
+                                    <option value="">-- Select Option --</option>
+                                    <!-- <option value="computer">Computer Sceince</option>
+                                    <option value="physics">Physics</option>
+                                    <option value="chemistry">Chemistry</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="government">Government</option>
+                                    <option value="commerce">Commerce</option> -->
+                                </select>
+                                <label for="" id="grade5Label"></label>
+                            </div>
+                            <div class="right_5">
+                                <input type="number" id="grade5" placeholder="enter grade">
+                                <label for="" id="grade5Error"></label>
+                            </div>
+                            <div class="left_6">
+                                <select name="" id="sixthSubject">
+                                    <option value="">-- Select Option --</option>
+                                    <!-- <option value="computer">Computer Sceince</option>
+                                    <option value="physics">Physics</option>
+                                    <option value="chemistry">Chemistry</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="government">Government</option>
+                                    <option value="commerce">Commerce</option> -->
+                                </select>
+                                <label for="" id="grade6Label"></label>
+                            </div>
+                            <div class="right_6">
+                                <input type="number" id="grade6" placeholder="enter grade">
+                                <label for="" id="grade6Error"></label>
+                            </div>
+                            <div class="left_7">
+                                <select name="" id="seventhSubject">
+                                    <option value="">-- Select Option --</option>
+                                    <!-- <option value="computer">Computer Sceince</option>
+                                    <option value="physics">Physics</option>
+                                    <option value="chemistry">Chemistry</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="government">Government</option>
+                                    <option value="commerce">Commerce</option> -->
+                                </select>
+                                <label for="" id="grade7Label"></label>
+                            </div>
+                            <div class="right_7">
+                                <input type="number" id="grade7" placeholder="enter grade">
+                                <label for="" id="grade7Error"></label>
+                            </div>
+                            <div class="left_8">
+                                <select name="" id="eightSubject">
+                                    <option value="">-- Select Option --</option>
+                                    <!-- <option value="computer">Computer Sceince</option>
+                                    <option value="physcis">Physics</option>
+                                    <option value="chemistry">Chemistry</option>
+                                    <option value="biology">Biology</option>
+                                    <option value="government">Government</option>
+                                    <option value="commerce">Commerce</option> -->
+                                </select>
+                                <label for="" id="grade8Label"></label>
+                            </div>
+                            <div class="right_8">
+                                <input type="number" id="grade8" placeholder="enter grade">
+                                <label for="" id="grade8Error"></label>
+                            </div>
+                            
+                        </div>
+                    </div>
+    </form>
+                    <!-- this is for the country -->
+                    <div class="country">
+                        <form action="">
+                            <label for="">Country</label>
+                            <select name="" id="country">
+                                <option value="">-- Select One --</option>
+                                    <option value="Asia" id="Asia"> Afghanistan</option>
+                                    <option value="Asia" id="Asia">Armenia</option>
+                                    <option value="Asia" id="Asia">Azerbaijan</option>
+                                    <option value="Africa" id="Africa">Angola</option>
+                                    <option value="Africa" id="Africa">Algeria</option>
+                                    <option value="south_america">Argentina</option>
+                                    <option value="Asia" id="Asia">Bahrain</option>
+                                    <option value="Asia" id="Asia">Bangladesh</option>
+                                    <option value="Asia" id="Asia">Bhutan</option>
+                                    <option value="south_america">Bolivia</option>
+                                    <option value="south_america">Brazil</option>
+                                    <option value="south_america">Chile</option>
+                                    <option value="south_america">Colombia</option>
+                                    <option value="Africa" id="Africa">Cameron</option>
+                                    <option value="north_america" id="north_america">Canada</option>
+                                    <option value="north_america" id="north_america">Costa Rica</option>
+                                    <option value="north_america" id="north_america">Cuba</option>
+                                    <option value="europe" id="europe">Cyprus</option>
+                                    <option value="europe" id="europe">Croatia</option>
+                                    <option value="europe" id="europe">Czechia</option>
+                                    <option value="north_america" id="north_america">Dominica</option>
+                                    <option value="south_america">Ecuador</option>
+                                    <option value="europe" id="europe"> Finland</option>
+                                    <option value="europe" id="europe">France</option>
+                                    <option value="north_america" id="north_america">Grenada</option>
+                                    <option value="europe" id="europe"> Germany</option>
+                                    <option value="north_america" id="north_america">Jamaica</option>
+                                    <option value="Africa" id="Africa">Nigeria</option>
+                            </select> <br>
+                            <label for="" id="Error1"></label><br>
+                            <label for="">Telephone</label><br>
+                            <input type="tel" id="telephone" placeholder="+234"><br>
+                            <label for="" id="Error2"></label>
+                            <br>
+                            <label for="">Address</label>
+                            <input type="text" id="address"> <br>
+                            <label for="" id="Error3"></label>
+                            <br>
+                            <input type="text" id="city" placeholder="City *"> <br>
+                            <label for="" id="Error4"></label>
+                            <br>
+                            <h4>Please verify and confirm the details entered, by checking the box below :</h4><br>
+                            <input type="checkbox" id="checked" value="1" class="check"> <label for="" class="checkT">I have checked all the details carefully. I understand that once submitted, these details cannot be changed and entering the wrong details may result in the application being rejected.</label><br>
+                            <label for="" id="checkError"></label> <br>
+                            <label for="" id="resultMsg" style="font-size: 20px;"></label>
+                        </form>
+                        <button type="button" id="btnSubmit">Submit</button>
+                        
+                    </div>
+        </div>
+        
+</details>
+<div class="canvas">
+    <canvas id="my_Chart"></canvas>
+ </div>
+<footer>
+    <div class="inner_footer">
+        <div class="main_footer">
+            <div class="leftFooter">
+                <img src="images/n-letter-logo-template-vector-11180419.jpg" height="150px" width="150px" alt="">
+                    <h2>HOD</h2>
+            </div>
+            <div class="middle_footer">
+                <img src="images/letter-n-logo-design-illustration_93835-498.jpg" height="150px" width="150px" alt="">
+                <h2>Speaker</h2>
+            </div>
+            <div class="right_footer">
+                <img src="images/letter-n-luxury-logo_1017-7990.jpg" height="150px" width="150px" alt="">
+                <h2>Lecturer</h2>
+            </div> <br>
+           
+        </div>
+        <p>Alright Reserved Designed by Abraham Jude &copy 2022</p>
+    </div>
+</footer>
+</div>
+<!-- </div> -->
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

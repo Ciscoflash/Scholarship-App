@@ -1,0 +1,481 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: auto;
+    background-color: #d9dadb;
+    padding-top: 100px;
+}
+.container .nav{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #054283;
+    grid-template-rows: repeat(1, minmax(100px, auto));
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.container .nav .nav_inner{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container .nav .nav_inner a{
+  color: white;
+  text-decoration: none;
+  margin-top: 30px;
+  font-size: 22px;
+}
+.container .form{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+.container .form p{
+   font-size: 25px;
+   font-weight: 500;
+}
+.container .form .instruction p{
+   font-size: 16px;
+   font-weight: 500;
+   padding: 10px;
+}
+.container .form .instruction {
+   background-color: rgb(241, 241, 241);
+   border-left: 5px solid #054283;
+   padding: 10px;
+   margin-top: 10px;
+}
+.container .form .instruction .instruct{
+   font-size: 22px;
+   font-weight: 500;
+   margin-top: 10px;
+   padding: 10px;
+}
+.container .main_form{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.container .main_form select{
+   width: 100%;
+   padding: 10px;
+   font-size: 16px;
+}
+.container .main_form input{
+   width: 98%;
+   padding: 10px;
+   font-size: 16px;
+}
+.container .main_form form{
+   margin-bottom: 20px;
+}
+.container .form .main_form .instruction p{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+ }
+ .container .form .main_form .instruction {
+    background-color: rgb(241, 241, 241);
+    border-left: 5px solid #054283;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+ }
+ .container .form .main_form .instruction .instruct{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 10px;
+ }
+ .container .main_form .country form .check{
+    width: 15px;
+ }
+ .container .main_form button{
+    width: 15%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-left: 380px;
+ }
+ .container .main_form button a{
+   text-decoration: none;
+    color: black;
+ }
+.container .grade{
+   width: 100%;
+   height: auto;
+}
+.container .grade .grade_inner{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: repeat(3, minmax(40px, auto));
+   grid-gap: 5px;
+   padding: 5px;
+}
+details{
+   padding: 20px;
+   margin-left: 20px;
+}
+
+.container .bg_image{
+width: 100%;
+height: auto;
+}
+.container .bg_image .bg_inner{
+width: 100%;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(2, minmax(300px, auto));
+grid-gap: 1px;
+background-color: rgb(0, 0,0, .72)
+}
+.container .bg_image .bg_inner .first{
+   background-image: url("../images/img2.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.container .bg_image .bg_inner .first .first_gradient{
+   width: 100%;
+   height: 400px;
+   background-color:rgb(0, 0,0, .72);
+   text-align: center;
+   padding-top: 120px;
+}
+.container .bg_image .bg_inner .first h2{
+      font-size: 50px;
+      color: white;
+      text-transform: uppercase;
+      padding-top: 70px;
+}
+.container .bg_image .bg_inner .first h3{
+      font-size: 20px;
+      color: white;
+      text-transform: uppercase;
+      padding-top: 10px;
+}
+.container .bg_image .bg_inner .first p{
+      font-size: 20px;
+      color: white;
+      text-transform: uppercase;
+      padding-top: 10px;
+}
+.container .bg_image .bg_inner .second{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: repeat(1, minmax(350px, auto));
+}
+.container .bg_image .bg_inner .second .left{
+  background-image: url("../images/im.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container .bg_image .bg_inner .second .middle{
+  background-image: url("../images/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container .bg_image .bg_inner .second .right{
+  background-image: url("../images/img3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+footer{
+   margin-top: 0px;
+   width: 100%;
+   height: auto;
+   background-color: #032a55;
+}
+footer .inner_footer{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(1, minmax(200px, auto));
+   padding-top: 15px;
+}
+footer .inner_footer .main_footer{
+   width: 50%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin: auto;
+}
+footer .inner_footer .main_footer img{
+   border-radius: 50%;
+   object-fit: fill;
+}
+footer .inner_footer .main_footer h2{
+   color: rgb(218, 214, 214);
+   text-align: center;
+   margin-right: 45px;
+}
+footer p{
+   color: rgb(218, 214, 214);
+   font-size: 15px;
+   text-align: center;
+   padding: 10px;
+}
+/* media query starts */
+@media (max-width:1024px) {
+   .container .main_form button{
+      width: 15%;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: 1px solid black;
+      margin-top: 15px;
+      margin-left: 330px;
+   }
+   .container{
+      padding-top: 100px;
+     }
+}
+@media (max-width:768px) {
+   .container .main_form button{
+      width: 20%;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: 1px solid black;
+      margin-top: 15px;
+      margin-left: 230px;
+   }
+   .container .nav .nav_inner{
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+  }
+   .container .nav .nav_inner img{
+      width: 60%;  
+  }
+  .container{
+   padding-top: 100px;
+  }
+  .container .bg_image .bg_inner .first h2{
+   font-size: 38px;
+  }
+  .container .bg_image .bg_inner .first p{
+   font-size: 17px;
+  }
+  footer .inner_footer .main_footer{
+   width: 70%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin: auto;
+}
+}
+@media (max-width:425px) {
+   .container .main_form button{
+      width: 40%;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: 1px solid black;
+      margin-top: 15px;
+      margin-left: 95px;
+   }
+   .container .nav .nav_inner{
+      width: 95%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+  }
+   .container .nav .nav_inner img{
+      width: 200px;
+      height: 40px;
+  }
+  .container .nav .nav_inner a{
+   color: white;
+   text-decoration: none;
+   margin-top: 12px;
+   font-size: 18px;
+ }
+ .container .nav{
+   width: 100%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: 1fr;
+   background-color: #054283;
+   grid-template-rows: repeat(1, minmax(80px, auto));
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+.container{
+   width: 100%;
+   height: auto;
+   background-color: #d9dadb;
+   padding-top: 80px;
+}
+.container .form p{
+   font-size: 18px;
+   font-weight: 500;
+}
+.container .form .instruction .instruct{
+   font-size: 18px;
+   font-weight: 500;
+   margin-top: 10px;
+   padding: 10px;
+}
+.container .form .instruction p{
+   font-size: 13px;
+   font-weight: 500;
+   padding: 10px;
+}
+.container .form .main_form .instruction .instruct{
+   font-size: 18px;
+   font-weight: 500;
+}
+.container .form .main_form .instruction p{
+   font-size: 13px;
+   font-weight: 500;
+}
+.container .main_form select{
+   width: 100%;
+   padding: 10px;
+   font-size: 13px;
+}
+.container .main_form input{
+   width: 98%;
+   padding: 10px;
+   font-size: 14px;
+}
+h4{
+   font-size: 15px;
+}
+checkT{
+   font-size: 15px;
+}
+.container .bg_image .bg_inner .first h2{
+   font-size: 22px;
+  }
+  .container .bg_image .bg_inner .first p{
+   font-size: 13px;
+  }
+  .container .bg_image .bg_inner .first h3{
+   font-size: 14px;
+  }
+  .container .bg_image .bg_inner .second{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(3, minmax(350px, auto));
+   grid-gap: 5px;
+}
+footer .inner_footer .main_footer{
+   width: 50%;
+   display: grid;
+   grid-template-columns: 1fr;
+   margin: auto;
+}
+details{
+   margin-top: 40px;
+   font-size: 20px;
+}
+}
+@media (max-width:375px) {
+   .container .nav .nav_inner a{
+      color: white;
+      text-decoration: none;
+      margin-top: 12px;
+      font-size: 13px;
+    }
+    .container .grade .grade_inner{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1, minmax(40px, auto));
+      grid-gap: 17px;
+      padding: 5px;
+   }
+   .container .main_form input{
+      width: 90%;
+      padding: 10px;
+      font-size: 14px;
+   }
+   .container .main_form button{
+      width: 40%;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: 1px solid black;
+      margin-top: 15px;
+      margin-left: 75px;
+   }
+   details{
+      padding: 20px 10px;
+      margin-left: 0px;
+   }
+   .container .bg_image .bg_inner .first h2{
+      font-size: 18px;
+     }
+     .container .bg_image .bg_inner .first p{
+      font-size: 11px;
+     }
+     .container .bg_image .bg_inner .first h3{
+      font-size: 12px;
+     }
+     .container{
+      width: 100%;
+      height: auto;
+      background-color: #d9dadb;
+      padding-top: 40px;
+   }
+}
+
+@media (max-width:320px) {
+   .container .nav .nav_inner img{
+      width: 150px;
+      height: 30px;
+  }
+  .container .nav .nav_inner a{
+   color: white;
+   text-decoration: none;
+   margin-top: 9px;
+ }
+ .container .main_form button{
+   width: 50%;
+   padding: 10px;
+   font-size: 18px;
+   border-radius: 8px;
+   border: 1px solid black;
+   margin-top: 15px;
+   margin-left: 55px;
+}
+.container .bg_image .bg_inner .first h3{
+   font-size: 11px;
+  }
+  .container .bg_image .bg_inner .first h2{
+   font-size: 16px;
+  }
+  .container .bg_image .bg_inner .first p{
+   font-size: 10px;
+  }
+  .container{
+   width: 100%;
+   height: auto;
+   background-color: #d9dadb;
+   padding-top: 40px;
+}
+}
