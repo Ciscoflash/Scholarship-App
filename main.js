@@ -64,19 +64,12 @@ let sixthSubject = document.getElementById("sixthSubject")
 let seventhSubject = document.getElementById("seventhSubject")
 let eightSubject = document.getElementById("eightSubject")
 let change = document.getElementById("change")
-let form = document.forms["my_form"]
 // Global variables for Calculation
 
 let point = 0
 let agePoint = 0
 let gradePoint = 0
 let countryPoint = 0
-let options3 = form.thirdSubject.options
-let options4 = form.fourthSubject.options
-let options5 = form.fifthSubject.options
-let options6 = form.sixthSubject.options
-let options7 = form.seventhSubject.options
-let options8 = form.eightSubject.options
 
 
 btnSubmit.addEventListener("click", function(){
@@ -465,34 +458,115 @@ const myChart = new Chart(ctx, {
 });
 }
 
- function AddOption(){
-    let studentsSub = ['-- Select Option --','chemistry', 'biology','physics','computer','government','commerce']
+let subjectData = ['Select Subject','Geography', 'Social Studies','Economics', 'Biology', 'Chemistry', 'Physics', 'Government','Accounting','Banking and Finance'];
 
-    let subject = ``
-    for(let i = 0; i < studentsSub.length; i++){
-    subject += 
-    `<option value="">
-    ${studentsSub[i]}
-    </option>`
-    }
 
-    thirdSubject.innerHTML = subject
-    fourthSubject.innerHTML = subject
-    fifthSubject.innerHTML = subject
-    sixthSubject.innerHTML = subject
-    seventhSubject.innerHTML = subject
-    eightSubject.innerHTML = subject
-
-    check()
+function subject3DropDown(){
+    let uniqueOption = new Set();
+    subjectData.forEach((index) => uniqueOption.add(index));
+    let uniqueList = [...uniqueOption];
+//  note the ... is to convert an object set into and array
+    thirdSubject.innerHTML = '';
+    uniqueList.forEach(item => {
+        let option = document.createElement('option');
+        option.textContent = item;
+        thirdSubject.appendChild(option);
+    });
+    thirdSubject.addEventListener('change', ()=>{
+        let subject = thirdSubject.value
+        subject4DropDown(uniqueList, subject);
+    })
 }
-this.addEventListener("load", function(){
-    AddOption()
-})
 
-function check(){
-    for(let i = 0; i < thirdSubject.options.length; i++){
-        if(thirdSubject[i].value == studentsSub[i]){
-            studentsSub[i].remove();
-        }
-    }
+function subject4DropDown(data,choose){
+    let filterSubject = data.filter(r => r != choose);
+    let uniqueOption1 = new Set();
+    filterSubject.forEach(r => uniqueOption1.add(r));
+    let uniqueList1 = [...uniqueOption1];
+
+    fourthSubject.innerHTML = '';
+    uniqueList1.forEach(item => {
+        let option = document.createElement('option');
+        option.textContent = item;
+        fourthSubject.appendChild(option);
+    });
+    
+    fourthSubject.addEventListener('change', ()=>{
+        let option2 = fourthSubject.value;
+        subject5DropDown(uniqueList1,option2);
+    })
 }
+
+function subject5DropDown(data,choose){
+    let filterSubject = data.filter(r => r != choose);
+    let uniqueOption1 = new Set();
+    filterSubject.forEach(r => uniqueOption1.add(r));
+    let uniqueList1 = [...uniqueOption1];
+
+    fifthSubject.innerHTML = '';
+    uniqueList1.forEach(item => {
+        let option = document.createElement('option');
+        option.textContent = item;
+        fifthSubject.appendChild(option);
+    });
+    
+    fifthSubject.addEventListener('change', ()=>{
+        let option2 = fifthSubject.value;
+        subject6DropDown(uniqueList1,option2);
+    })
+}
+function subject6DropDown(data,choose){
+    let filterSubject = data.filter(r => r != choose);
+    let uniqueOption1 = new Set();
+    filterSubject.forEach(r => uniqueOption1.add(r));
+    let uniqueList1 = [...uniqueOption1];
+
+    sixthSubject.innerHTML = '';
+    uniqueList1.forEach(item => {
+        let option = document.createElement('option');
+        option.textContent = item;
+        sixthSubject.appendChild(option);
+    });
+    
+    sixthSubject.addEventListener('change', ()=>{
+        let option2 = sixthSubject.value;
+        subject7DropDown(uniqueList1,option2);
+    })
+}
+function subject7DropDown(data,choose){
+    let filterSubject = data.filter(r => r != choose);
+    let uniqueOption1 = new Set();
+    filterSubject.forEach(r => uniqueOption1.add(r));
+    let uniqueList1 = [...uniqueOption1];
+
+    seventhSubject.innerHTML = '';
+    uniqueList1.forEach(item => {
+        let option = document.createElement('option');
+        option.textContent = item;
+        seventhSubject.appendChild(option);
+    });
+    
+    seventhSubject.addEventListener('change', ()=>{
+        let option2 = seventhSubject.value;
+        subject8DropDown(uniqueList1,option2);
+    })
+}
+
+
+function subject8DropDown(data,choose){
+    let filterSubject = data.filter(r => r != choose);
+    let uniqueOption1 = new Set()
+    filterSubject.forEach((index)=> uniqueOption1.add(index))
+    let uniqueList1 = [...uniqueOption1]
+
+    eightSubject.innerHTML = ''
+    uniqueList1.forEach(item =>{
+        let option = document.createElement('option')
+        option.textContent = item
+        eightSubject.appendChild(option)
+    })
+}
+
+
+
+document.addEventListener('DOMContentLoaded', subject3DropDown);
